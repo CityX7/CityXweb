@@ -16,8 +16,8 @@ roll_die_and_keep_highest() {
 
 # Function to generate a random character name
 generate_random_name() {
-    local first_names=("Chris" "Dick" "Mark" "Matt" "Abbie" "Leitha" "Brian" "Zach" "Gabe" "Wendy")
-    local last_names=("Smartass" "Johnson" "Sackhoggy" "Jones" "de la Creme" "Dubois" "Cornell" "Zpip" "Haaland" "Hoosiers")
+    local first_names=("C" "D" "M" "M" "A" "L" "B" "Z" "G" "Wen")
+    local last_names=("Smartyass" "Johnson" "Sackhoggy" "Jones" "de la Creme" "Dubois" "Corny" "Zpip" "Haaland" "Hoosiers")
     local first_name=${first_names[RANDOM % ${#first_names[@]}]}
     local last_name=${last_names[RANDOM % ${#last_names[@]}]}
     echo "$first_name $last_name"
